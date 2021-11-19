@@ -3,8 +3,16 @@
 // your code here
 
   //first approach
+  let counter = 0;
+let count = () => ++counter;
+count.reset = () => counter = 0;
+
+
+
+
+//same approach - longer code
   let counter=0;
-  
+
  let count = function(){
   return ++counter;
 }

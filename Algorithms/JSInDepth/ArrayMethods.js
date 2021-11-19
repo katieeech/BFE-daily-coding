@@ -83,6 +83,11 @@ array.splice // Add or remove elements from the array.
 
 
 /////////////////////// IMMUTable IMMUTable IMMUTable IMMUTable IMMUTable//////////////////////
+//0)split()
+// divides a String into an 'ordered list' of substrings,
+//  puts these substrings into an 'array', and returns the array. 
+
+
 
 let a1 = [1,2,3,4]
 let a2 = ["a","b","c","d"]
