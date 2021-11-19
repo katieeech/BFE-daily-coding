@@ -2,6 +2,17 @@
 //how many times it has been called, count.reset() should also implemented.
 // your code here
 
+  //first approach
+  let counter=0;
+  
+ let count = function(){
+  return ++counter;
+}
+count.reset = function(){
+  counter=0;
+}
+
+//second approach
 // this is a self-executing anonymous function where you define a function and force executing it immediately.
 const count = (
     () => {
@@ -21,12 +32,3 @@ const count = (
     return func;
   }
 
-  //second approach
-  let counter=0;
-  
- let count = function(){
-  return ++counter;
-}
-count.reset = function(){
-  counter=0;
-}
