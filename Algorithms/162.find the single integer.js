@@ -7,8 +7,9 @@ findSingle(arr) // 1
 function findSingle(arr) {
   return  arr.filter((num) => {
     return arr.indexOf(num) === arr.lastIndexOf(num)
-  })[0]
+  })[0] //need [0] at the end because it returns an array and we want the element from it
 }
+//*filter() returns a new array with the elements that pass the test.
 
 
 //My solution
