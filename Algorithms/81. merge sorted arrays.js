@@ -15,6 +15,10 @@ function merge(arrList) {
   }
 
 
+  //flat() creates a New array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+
+
 //approach
   function merge(arrList) {
     return arrList.flat().sort((a, b) => a - b)
@@ -24,7 +28,3 @@ function merge(arrList) {
     if (!arrList.length) return arrList;
     return arrList.reduce((prevValue, currValue) => ([...prevValue, ...currValue])).sort((a,b) => a - b);
   }
-  //
-  function merge(arrList) {
-  return arrList.flat(arrList.length).sort((a,b) => a - b);
-}
