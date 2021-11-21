@@ -6,8 +6,9 @@
 //////////////////////////   Mutable Mutable Mutable Mutable Mutable  /////////////////
 
 //////////////1. Splice - Mutable
+//splice() adds and/or removes array elements. splice() overwrites the original array.
 //Splice returns the removed item
-a1.splice(start, deleteCount, items)  //splice is mutable
+a1.splice(start, deleteCount, items)  
 
 
 let fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -133,6 +134,10 @@ lastIndexOf(searchElement)
 lastIndexOf(searchElement, fromWhichndex)
 let numbers = [2, 5, 9, 2];
 numbers.lastIndexOf(2, 3);  // 3
+
+
+//6) reduce()
+
 
 //Summarize the IMMUtable methods:
 array.concat //Join the array with other array(s) OR value(s).
