@@ -34,3 +34,13 @@ grades.reduce( (max, currVal) => { return Math.max(max, currVal)})
 grades.reduce( (max, currVal) =>  ( Math.max(max, currVal) ))
 //works
 
+
+//Nested function
+const greet = () =>  {
+  const prefix = 'Mr'
+  return (name) => {
+      console.log(`${prefix} ${name}, welcome!`)
+  }
+}
+
+console.log(greet()('Jack'))
