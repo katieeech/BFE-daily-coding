@@ -2,7 +2,7 @@
 // please implement a function deduplicate() to remove the duplicates.
 
 // You should modify the array in place. Order doesn't matter.
-
+let arr= [1,2,2,3,4,5,5]
 function deduplicate(arr) {
     for(let i = arr.length-1; i >= 0;){
       let last = arr.pop();
@@ -11,4 +11,6 @@ function deduplicate(arr) {
       }
       i--;
     }
+    return arr
   }
+  deduplicate(arr)
