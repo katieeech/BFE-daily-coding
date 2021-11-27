@@ -32,3 +32,11 @@ function smallestUniqueSubstr(str) {
   }
   console.log("bab")
 
+  //Another approach:
+  function smallestUniqueSubstr(str) {
+    let arr = str.split("")
+    return [...new Set(arr)].sort((a,b)=> a.localeCompare(b)).join("")
+    }
+
+    //A solution using hashMap
+    // https://github.com/kalpeshsingh/data-structure-agorithms-in-js/blob/master/112.md

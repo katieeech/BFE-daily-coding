@@ -11,3 +11,7 @@ const myNew = (constructor, ...args) => {
     obj.__proto__ = constructor.prototype;
     return constructor.apply(obj, args) || obj;
   }
+
+  //About new()
+  //It create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.
+  

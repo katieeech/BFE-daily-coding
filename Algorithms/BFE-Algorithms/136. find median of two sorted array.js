@@ -1,11 +1,6 @@
 
-/**
- * @param {number[]} arr1 - sorted integer array
- * @param {number[]} arr2 - sorted integer array
- * @returns {number}
- */
- function median(arr1, arr2) {
-    let sortedArr = arr1.concat(arr2).sort((a,b)=>a-b)
+function median(arr1, arr2) {
+    let sortedArr = arr1.concat(arr2).sort((a,b) => a-b)
     // let median = ""
     if(sortedArr.length % 2 !== 0){
      while(sortedArr.length > 3){

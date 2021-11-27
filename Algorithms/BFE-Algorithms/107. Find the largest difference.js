@@ -23,3 +23,6 @@ function largestDiff(arr) {
     if(arr.length <= 1) {return 0}
   return diff
   }
+
+
+  const arr = [-1, 2,3,10, 9]

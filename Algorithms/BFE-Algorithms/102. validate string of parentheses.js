@@ -1,3 +1,4 @@
+//Have not solved yet.
 validate('{}[]()') 
 // true
 validate('{[()]}') 

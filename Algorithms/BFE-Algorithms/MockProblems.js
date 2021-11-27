@@ -5,4 +5,7 @@
 // Function to represent a Triangle , give input is the number of rows of the triangle.
 
 // "return the least occuring object from an array."
+
+
+// Work on this:
 // "return the index and count of every other object in an array."

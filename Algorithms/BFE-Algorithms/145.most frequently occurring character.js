@@ -12,7 +12,7 @@ function count(str) {
   }
 
 
-//second answer
+//second approach
   function count(str) {
     const countsMap = {};
     const countsSorted = [];
