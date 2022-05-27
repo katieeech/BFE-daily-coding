@@ -14,29 +14,26 @@
 
 // All input only contains valid lowercase alphabets only.
 
+//Another approach:
+function smallestUniqueSubstr(str) {
+  let arr = str.split("");
+  return [...new Set(arr)].sort((a, b) => a.localeCompare(b)).join("");
+}
+
+//A solution using hashMap
+// https://github.com/kalpeshsingh/data-structure-agorithms-in-js/blob/master/112.md
 
 //Still solving- my solution
 function smallestUniqueSubstr(str) {
-    let strNew = str.split("")
-  
-  
-    for (l of strNew){
-  if(strNew.indexOf(l) === strNew.lastIndexOf(l)){
-   return strNew.join("")
-  } else if(strNew.indexOf(l) !== strNew.lastIndexOf(l)){
-        strNew.splice(strNew.lastIndexOf(l),1)
-            return strNew.sort().join("")
-     }
-   }
-  
-  }
-  console.log("bab")
+  let strNew = str.split("");
 
-  //Another approach:
-  function smallestUniqueSubstr(str) {
-    let arr = str.split("")
-    return [...new Set(arr)].sort((a,b)=> a.localeCompare(b)).join("")
+  for (l of strNew) {
+    if (strNew.indexOf(l) === strNew.lastIndexOf(l)) {
+      return strNew.join("");
+    } else if (strNew.indexOf(l) !== strNew.lastIndexOf(l)) {
+      strNew.splice(strNew.lastIndexOf(l), 1);
+      return strNew.sort().join("");
     }
-
-    //A solution using hashMap
-    // https://github.com/kalpeshsingh/data-structure-agorithms-in-js/blob/master/112.md
+  }
+}
+console.log("bab");
